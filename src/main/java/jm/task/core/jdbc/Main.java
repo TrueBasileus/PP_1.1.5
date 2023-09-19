@@ -2,6 +2,7 @@ package jm.task.core.jdbc;
 
 import jm.task.core.jdbc.service.UserService;
 import jm.task.core.jdbc.service.UserServiceImpl;
+import jm.task.core.jdbc.util.Util;
 
 
 public class Main {
@@ -16,7 +17,9 @@ public class Main {
             System.out.printf("User с именем - %s добавлен в базу данных \n", names[i]);
         }
         System.out.println(serv.getAllUsers());
-        serv.cleanUsersTable();;
+        serv.cleanUsersTable();
         serv.dropUsersTable();
+        Util.closeConnection();
     }
+
 }
