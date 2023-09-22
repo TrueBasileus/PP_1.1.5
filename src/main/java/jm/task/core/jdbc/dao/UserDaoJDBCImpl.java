@@ -14,15 +14,6 @@ import java.util.List;
 public class UserDaoJDBCImpl implements UserDao {
 
     private Connection connection;
-
-    {
-        try {
-            connection = Util.getConnection();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-
     public UserDaoJDBCImpl() {
 
     }

@@ -33,11 +33,7 @@ public class Util {
         return sf;
     }
 
-    /*public static void closeConnection(Connection connection) {
-        try {
-            connection.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }*/
+    public static void closeConnection() {
+        sf.close();
+    }
 }

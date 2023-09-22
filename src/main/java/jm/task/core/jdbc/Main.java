@@ -19,7 +19,7 @@ public class Main {
         System.out.println(serv.getAllUsers());
         serv.cleanUsersTable();
         serv.dropUsersTable();
-       // Util.closeConnection();
+        Util.closeConnection();
     }
 
 }
