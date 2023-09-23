@@ -32,7 +32,7 @@ public class User {
     }
 
     public String toString() {
-        return this.name + " "  + this.lastName + " " + this.age;
+        return this.name + " " + this.lastName + " " + this.age;
     }
 
     public Long getId() {
