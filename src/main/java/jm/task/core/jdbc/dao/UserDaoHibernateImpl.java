@@ -75,6 +75,9 @@ public class UserDaoHibernateImpl implements UserDao {
     public List<User> getAllUsers() {
         try (Session session = sf.openSession()) {
             return session.createQuery("from User", User.class).list();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
         }
     }
 
